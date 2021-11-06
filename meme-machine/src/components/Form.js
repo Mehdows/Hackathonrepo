@@ -8,18 +8,14 @@ class InputForm extends React.Component {
           data: this.props.text
         }
         this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
         
     }
 
     handleChange(event){
         this.setState({value: event.target.value});
-    }
-
-    handleSubmit(event){
-        this.setState({value: event.target.value});
         event.preventDefault();
     }
+
 
     render() {
       const {data} = this.state;
@@ -29,7 +25,6 @@ class InputForm extends React.Component {
               {data}
               <input type="text" value={this.state.value} onChange={this.handleChange} />
             </label>
-            <input type="submit" value="Submit" />
           </form>
         );
 
