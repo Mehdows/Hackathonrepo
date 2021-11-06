@@ -1,7 +1,13 @@
+<<<<<<< HEAD
+=======
+import logo from './logo.svg';
+import InputForm from './components/Form.js'
+>>>>>>> b3d5b63029890f0c55ed00218dd4ad90442fcdb1
 import './App.css';
 //import Button from './components/Button'
 import { Component } from 'react';
 
+<<<<<<< HEAD
 import {
   TwitterShareButton,
   TwitterIcon,
@@ -28,6 +34,17 @@ export default class App extends Component {
     );
 
   }
+=======
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <InputForm text='toptext'></InputForm>
+        <InputForm text='bottomtext'></InputForm>
+      </header>
+    </div>
+  );
+>>>>>>> b3d5b63029890f0c55ed00218dd4ad90442fcdb1
 }
 
 
