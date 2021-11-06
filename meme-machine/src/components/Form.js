@@ -1,4 +1,5 @@
 import React from "react"
+import './Form.scss'
 
 class InputForm extends React.Component {
     constructor(props){
@@ -18,15 +19,19 @@ class InputForm extends React.Component {
 
 
     render() {
+      
       const {data} = this.state;
         return (
+          <div className="return">
           <form onSubmit={this.handleSubmit}>
             <label>
               {data}
               <input type="text" value={this.state.value} onChange={this.handleChange} />
             </label>
           </form>
+          </div>
         );
+        
 
     }
     
